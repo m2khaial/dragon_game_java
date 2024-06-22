@@ -158,3 +158,54 @@ function buyWeapon() {
       text.innerText = "Don't sell your only weapon!";
     }
   }
+
+  function fightSlime() {
+    fighting = 0;
+    goFight();
+  }
+  
+  function fightBeast() {
+    fighting = 1;
+    goFight();
+  }
+  
+  function fightDragon() {
+    fighting = 2;
+    goFight();
+  }
+  
+  function goFight() {
+    update(locations[3]);
+    monsterHealth = monsters[fighting].health;
+    monsterStats.style.display = "block";
+    monsterName.innerText = monsters[fighting].name;
+    monsterHealthText.innerText = monsterHealth;
+  }
+  
+  function attack() {
+    text.innerText = "The " + monsters[fighting].name + " attacks.";
+    text.innerText += " You attack it with your " + weapons[currentWeapon].name + ".";
+    health -= getMonsterAttackValue(monsters[fighting].level);
+    if (isMonsterHit()) {
+      monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;    
+    } else {
+      text.innerText += " You miss.";
+    }
+    healthText.innerText = health;
+    monsterHealthText.innerText = monsterHealth;
+    if (health <= 0) {
+      lose();
+    } else if (monsterHealth <= 0) {
+      if (fighting === 2) {
+        winGame();
+      } else {
+        defeatMonster();
+      }
+    }
+    if (Math.random() <= .1 && inventory.length !== 1) {
+      text.innerText += " Your " + inventory.pop() + " breaks.";
+      currentWeapon--;
+    }
+  }
+
+  
