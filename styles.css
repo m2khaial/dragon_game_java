@@ -1,119 +1,73 @@
 body {
-    background-color: #0a0a23;
-    color: #ffffff; /* Ensures text color is white for better readability */
-  }
-  
-  #text {
-    background-color: #0a0a23;
-    color: #ffffff;
-    padding: 10px;
-  }
-  
-  button {
-    cursor: pointer;
-    color: #ffffff;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    display: block; /* Ensure buttons are block elements for proper layout */
-    margin-bottom: 10px; /* Add some space between buttons */
-}
-
-button:hover {
-    background-color: #45a049;
+    background-color: #1f1f1f; /* Dark background for a modern feel */
+    color: #ffffff; /* White text for better readability */
+    font-family: 'Roboto', sans-serif; /* Use a modern font */
+    margin: 0; /* Remove default margin for full width */
+    padding: 0; /* Remove default padding */
 }
 
 #game {
-    max-width: 800px;
-    margin: 50px auto; /* Increase margin for better centering */
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #333333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 600px; /* Limit game width for better readability */
+    background-color: #2f2f2f; /* Slightly darker background for the game */
+    color: #ffffff; /* White text */
+    margin: 50px auto; /* Center the game vertically and horizontally */
+    padding: 30px; /* Add padding for spacing */
+    border-radius: 15px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
 }
-  
-  #controls,
-  #stats {
-    border: 1px solid #0a0a23;
-    padding: 5px;
-    color: #0a0a23;
-    background-color: #ffffff; /* Ensures background color matches the game box */
-    border-radius: 5px; /* To give a slight round to the borders */
-    margin-bottom: 10px; /* To add some space between elements */
-  }
-  
-  #monsterStats {
-    display: none;
-    border: 1px solid #0a0a23;
-    padding: 5px;
-    color: #ffffff;
-    background-color: #c70d0d;
-    border-radius: 5px; /* To give a slight round to the borders */
-  }
-  
-  .stat {
-    padding-right: 10px;
-  }
-  
-  button {
+
+#controls,
+#stats,
+#monsterStats {
+    background-color: #3f3f3f; /* Darker background for sections */
+    color: #ffffff; /* White text */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Spacing between sections */
+    padding: 20px; /* Padding for content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+button {
     cursor: pointer;
-    color: #0a0a23;
-    background-color: #feac32;
-    background-image: linear-gradient(#fecc4c, #ffac33);
-    border: 3px solid #feac32;
-    border-radius: 5px; /* To make buttons slightly rounded */
-    padding: 5px 10px; /* To add some padding inside buttons */
-  }
-  
-  button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
+    color: #ffffff; /* White text */
+    background-color: #4CAF50; /* Green button color */
     border: none;
-    border-radius: 5px;
-    margin: 5px;
-  }
-  
-  /* Style for text area */
-  #text {
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px 30px; /* Padding for button */
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#text {
     font-size: 18px;
     margin-bottom: 20px;
-  }
-  
-  /* Style for monster stats */
-  #monsterStats {
-    display: none;
-    margin-top: 20px;
-  }
-  
-  /* Style for monster name */
-  #monsterName {
+}
+
+#monsterName {
     font-weight: bold;
-  }
-  
-  /* Style for health, gold, and XP */
-  #healthText, #goldText, #xpText {
-    font-weight: bold;
-  }
-  
-  /* Style for container */
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-  }
-  
-  /* Style for game over/win messages */
-  .game-over, .win {
+}
+
+.stat {
+    padding-right: 10px;
+}
+
+.container {
+    max-width: 800px; /* Limit container width for better readability */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Padding for content */
+    border-radius: 15px; /* Rounded corners */
+    background-color: #333333; /* Darker background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.game-over,
+.win {
     font-size: 24px;
     font-weight: bold;
-  }
+    text-align: center; /* Center align game over/win messages */
+    margin-top: 20px; /* Spacing from other elements */
+}
