@@ -1,11 +1,13 @@
 body {
-    background-color: #0a3419; /* Dark green background */
+    background-color: #ac0e00; /* Red background */
     color: #ffffff;
+    position:center;
   }
+
   
   #game {
     max-width: 500px;
-    background-color: #5e8c5a; /* Light green game background */
+    background-color: #0b159b; /* Blue game background */
     color: #ffffff;
     margin: 30px auto;
     padding: 20px;
@@ -19,7 +21,7 @@ body {
   }
   
   button {
-    background-color: #5c9560; /* Green button background */
+    background-color: #a4a4a4; /* Silver button background */
     color: #ffffff;
     padding: 15px 20px;
     text-align: center;
