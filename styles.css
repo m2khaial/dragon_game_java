@@ -1,5 +1,5 @@
 body {
-    background-color: #ac0e00; /* Red background */
+    background-color: linear-gradient(135deg, #a4a4a4, black); /* Red background */
     color: #ffffff;
     position:center;
   }
@@ -39,7 +39,7 @@ body {
   
   .stat {
     padding-right: 10px;
-    background:#ffea00;
+    background-color:#ffea00;
 position:center;
   }
   
