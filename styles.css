@@ -39,6 +39,8 @@ body {
   
   .stat {
     padding-right: 10px;
+    background:#ffea00;
+position:center;
   }
   
   #text {
@@ -52,5 +54,7 @@ body {
   
   #healthText, #goldText, #xpText {
     font-weight: bold;
+    background:#ffea00;
+position:center;
   }
 /*dark green theme*/
